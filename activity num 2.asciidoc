@@ -1,0 +1,156 @@
++*In[1]:*+
+[source, ipython3]
+----
+
+print("Hellow, what is your name?")
+name = input() 
+x= (f"{name} please put a corret number")
+SA= (f"{name} you barely passed,You got a SA")
+DE= (f"{name} you do it great, You got a DE")
+AU= (f"{name} You got a exelent score, congratulations, You got a AU ")
+NA= (f"{name} you need to do it better, You got a NA")
+IN= ("is imposible, please try a correct score between 0 and 100")
+allz= (f"{name} you pass all your courses, congratulations ")
+zero= (f"{name}you didn't pass all your courses")
+two=(f"{name} you only pass two of your courses, try to do it better ")
+one=(f"{name} you only pass one of your courses, sorry for you")
+
+
+math = int(input(f"what was your score on math {name}? "))
+if math>=80 and math<=84:
+    print(SA)
+elif math>=85 and math<=95:
+    print(DE)
+elif math>=96 and math<=100:
+    print(AU)
+elif math<=79 and math>=0:
+    print(NA)
+else:
+    print(IN)
+    
+P_S = int(input("what was your score on Probability and Statistics? "))
+if P_S>=80 and P_S<=84:
+    print(SA)
+elif P_S>=85 and P_S<=95:
+    print(DE)
+elif P_S>=96 and P_S<=100:
+    print(AU)
+elif P_S<=79 and P_S>=0:
+    print(NA)
+else:
+    print(IN)
+    
+    
+electronics= int(input("what was your electronics? "))
+if electronics>=80 and electronics<=84:
+    print(SA)
+elif electronics>=85 and electronics<=95:
+    print(DE)
+elif electronics>=96 and electronics<=100:
+    print(AU)
+elif electronics<=79 and electronics>=0:
+    print(NA)
+else:
+    print(In)
+    
+if electronics>=80 and math>=80 and P_S>=80:
+    print= (allz)
+    
+elif electronics>=80 and math<=80 and P_S<=80:
+    print(one)
+elif electronics<=80 and math>=80 and P_S<=80:
+    print(one)
+elif electronics<=80 and math<=80 and P_S>=80:
+    print(one)
+elif electronics>=80 and math>=80 and P_S<=80:
+    print(two)
+elif electronics>=80 and math<=80 and P_S>=80:
+    print(two)
+elif electronics<=80 and math>=80 and P_S>=80:
+    print(two)
+elif electronics<=80 and math<=80 and P_S<=80:
+    print(zero)
+
+----
+
+
++*Out[1]:*+
+----
+Hellow, what is your name?
+juan
+what was your score on math juan? 90
+juan you do it great in math, You got a DE
+what was your score on Probability and Statistics? 90
+juan you do it great in math, You got a DE
+what was your electronics? 50
+juan you need to do it better, You got a NA
+juan you only pass two of your courses
+----
+
+
++*In[2]:*+
+[source, ipython3]
+----
+if electronics, P_S, math>= 80
+    print(nice)
+----
+
+
++*Out[2]:*+
+----
+
+      File "<ipython-input-2-da69009a0e7a>", line 1
+        if electronics, P_S, math>= 80
+                      ^
+    SyntaxError: invalid syntax
+    
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+age = int(input("How old are you? "))
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+age = int(input("How old are you? "))
+if age <= 18:
+    print("You are still a baby!")
+if age > 18 and age <= 25:
+    print(f"You look younger than {age}!")
+if age > 25:
+    print("You are getting older :(")
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
